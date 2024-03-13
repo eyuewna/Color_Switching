@@ -1,1 +1,77 @@
+body {
+    background: url('../images/background.png') no-repeat center center fixed;
+    background-size: 100% 100%; /* Set the background size to cover the entire body */
+        font-family: 'Roboto', sans-serif;
+        background-color: #f2f2f2;
+    }
+#buttons {
+    position: absolute;
+    left: 0;
+    top: 0;
 
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.day {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5e4d4d;
+    background-color: #007bff;
+    display: block;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 120px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+.day:hover {
+    transform: scale(1.1); /* Add this line */
+}
+
+
+.box {
+    background-color: #ccc;
+    position:absolute;
+    right: 10%;
+    top: 50px;
+    width: 250px;
+    height: 200px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideUp {
+    to {
+        top: -600px;
+        opacity: 0;
+    }
+}
+
+
+@keyframes slideDown {
+    to { top: 200px }
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+
+#monday { background-color: #f6f2af; }
+#tuesday { background-color: #dc9d9d; }
+#wednesday { background-color: #a8d49e; }
+#thursday { background-color: #aed4de; }
+#friday { background-color: #9892bc; }
+#saturday { background-color: #f7c486; }
+#sunday { background-color: #a48d8f; }
